@@ -7,12 +7,19 @@ This project focuses on detecting depression using EEG (Electroencephalogram) si
 To develop a machine learning system that classifies EEG signals to detect signs of depression, with a focus on understanding the impact of different feature types and selection methods on classification performance.
 
 ---
+## 📂 Dataset
+
+The dataset used in this project is the publicly available **[OpenNeuro EEG: Depression Rest Dataset](https://openneuro.org/datasets/ds003790)**.
+
+- Contains resting-state EEG recordings from individuals with and without depression.
+
 
 ## 📁 Project Workflow
 
 ### 1. **Signal Segmentation**
 - EEG signals were segmented to separate **eyes-open** and **eyes-closed** states.
-- Only **eyes-closed** segments were used for modeling.
+- Only **eyes-closed** segments were used for modeling and feature extraction.
+  
 
 ### 2. **Preprocessing & Filtering**
 - Removed noise and artifacts using preprocessing techniques.
